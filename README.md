@@ -1,2 +1,2 @@
 # UltiSnips
-my ultisnips extend  vim youcompleteme 
+my vim ultisnips extend
