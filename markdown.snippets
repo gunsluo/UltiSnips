@@ -1,12 +1,10 @@
-snippet head "Jekyll post header" b
+snippet head "hexo post header" b
 ---
-layout: post
 title: ${1:title}
 subtitle: ${2:subtitle}
+date: `!v strftime("%Y-%m-%d %H:%M:%S")`
 tags:
-date: `!v strftime("%Y-%m-%d %H:%M:%S")` +0800
 categories: 
-  - ${4}
 ---
 
 ${0}
