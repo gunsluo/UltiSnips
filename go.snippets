@@ -1,13 +1,55 @@
 snippet dox "golang func header note" b
 // ${0}
-// Author: jerrylou, <gunsluo@gmail.com> `!v strftime("%Y-%m-%d %H:%M:%S")`
+// Author: jerrylou, <gunsluo@gmail.com>
+// Since: `!v strftime("%Y-%m-%d")`
 endsnippet
 
 snippet doxn "golang new block note" b
-// ${0}  Add: jerrylou `!v strftime("%Y-%m-%d %H:%M:%S")`
+// ${0}  Add: jerrylou, <gunsluo@gmail.com> Since: `!v strftime("%Y-%m-%d")`
 endsnippet
 
 snippet doxm "golang modify block note" b
-// ${0}  Modify: jerrylou `!v strftime("%Y-%m-%d %H:%M:%S")`
+// ${0}  Modify: jerrylou, <gunsluo@gmail.com> Since: `!v strftime("%Y-%m-%d")`
 endsnippet
 
+snippet iota "Iota constant generator" b
+const (
+	${1:constant}${2/(.+)/ /}${2:int} = iota
+)
+endsnippet
+
+snippet struct "Struct declaration" b
+type ${1:Struct} struct {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet interface "Interface declaration" b
+type ${1:Interface} interface {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet if "If statement" b
+if ${1:condition}${1/(.+)/ /}{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet switch "Switch statement" b
+switch ${1:expression}${1/(.+)/ /}{
+case$0
+}
+endsnippet
+
+snippet /^method/ "Method" r
+func (${1:receiver} ${2:*int}) ${3:name}(${4:params})${5/(.+)/ /}${5:int} {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet func "Function" b
+func ${1:name}(${2:params})${3/(.+)/ /}${3:int} {
+	${0:${VISUAL}}
+}
+endsnippet
