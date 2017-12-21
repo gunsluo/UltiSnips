@@ -1,15 +1,15 @@
 snippet dox "golang func header note" b
 // ${0}
-// Author: jerrylou, <gunsluo@gmail.com>
+// Author: luoji, <gunsluo@gmail.com>
 // Since: `!v strftime("%Y-%m-%d")`
 endsnippet
 
 snippet doxn "golang new block note" b
-// ${0}  Add: jerrylou, <gunsluo@gmail.com> Since: `!v strftime("%Y-%m-%d")`
+// ${0}  Add: luoji, <gunsluo@gmail.com> Since: `!v strftime("%Y-%m-%d")`
 endsnippet
 
 snippet doxm "golang modify block note" b
-// ${0}  Modify: jerrylou, <gunsluo@gmail.com> Since: `!v strftime("%Y-%m-%d")`
+// ${0}  Modify: luoji <gunsluo@gmail.com> Since: `!v strftime("%Y-%m-%d")`
 endsnippet
 
 snippet iota "Iota constant generator" b
@@ -53,3 +53,20 @@ func ${1:name}(${2:params})${3/(.+)/ /}${3:int} {
 	${0:${VISUAL}}
 }
 endsnippet
+
+snippet alicense "apache license 2.0" b
+// Copyright 2017 luoji
+
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+
+//    http://www.apache.org/licenses/LICENSE-2.0
+
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License. ${0}  
+endsnippet
+
